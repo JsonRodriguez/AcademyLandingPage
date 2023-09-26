@@ -7,9 +7,9 @@ export const Header = () => {
             <span className="blur"></span>
             <span className="blur"></span>
             <h4>✨ DISCOVER YOUR PASSION FOR BEAUTY ✨</h4>
-            <h1><span>Krisda Academy</span>, Learn with us</h1>
+            <h1><span>Lettys Academy</span>, Learn with us</h1>
             <p>
-            🌟 Welcome to Krisda Academy 🌟<br/><br/>
+            🌟 Welcome to Lettys Academy 🌟<br/><br/>
             ✨ Discover your potential in the world of beauty with us! 💄 We offer courses in makeup, skincare, hairdressing, and much more, taught by industry experts. ✂️ We help you shine. Explore our courses today! 🌟
             </p>
             <button className='btn'>Get Started</button>

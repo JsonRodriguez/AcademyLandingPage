@@ -16,7 +16,7 @@ function App() {
       <Footer />
 
       <div className="copyright">
-        Copyright © 2023 Krisda Academy. All Rights Reserved.
+        Copyright © 2023 Lettys Academy. All Rights Reserved.
       </div>
     </div>
   )

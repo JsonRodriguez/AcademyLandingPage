@@ -71,12 +71,14 @@ nav{
 }
 
 .theme-toggle{
-    position: relative;
-    margin-right: -200px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .theme-toggle i{
     color: #fff;
+    font-size: 25px;
     transition: all 0.3s ease;
 }
 
@@ -152,6 +154,11 @@ header .image{
 header .image img{
     max-width: 600px;
     margin: auto;
+    transition: all 0.3s ease;
+}
+
+header .image img:hover{
+    box-shadow: 0 20px 10px -15px #f54141;
 }
 
 section .header{
