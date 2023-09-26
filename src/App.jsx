@@ -1,15 +1,14 @@
 import './App.css'
-
-import { NavBar } from './components/NavBar'
-import { Header } from './components/Header'
-import { Feature } from './components/Feature'
-import { Pricing } from './components/Pricing'
-import { Footer } from './components/Footer'
+import { NavBar, Header, Feature, Pricing, Footer } from './components';
+import useLocalStorage from 'use-local-storage';
 
 function App() {
+
+  const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light');
+
   return (
-    <div className='main'>
-      <NavBar />
+    <div className='main' data-theme={theme}>
+      <NavBar setTheme={ setTheme } />
       <Header />
       <Feature />
       <Pricing />

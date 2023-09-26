@@ -3,15 +3,17 @@ import logo from '../images/logo.png';
 
 const moon = 'fa-solid fa-moon', sun = 'fa-solid fa-sun';
 
-export const NavBar = () => {
+export const NavBar = ({ setTheme }) => {
 
   const [themeState, setThemeState] = useState(false);
 
   const onToggleChange = () => {
     if( themeState ) {
-      setThemeState( false ) 
+      setThemeState( false );
+      setTheme('light');
     }else{
-     setThemeState( true );
+      setThemeState( true );
+      setTheme('dark');
     }
   }
   
@@ -29,7 +31,7 @@ export const NavBar = () => {
             <li className='link'><a href="#aboutID">About</a></li>
         </ul>
         <div className="theme-toggle">
-          <i onClick={ onToggleChange } className={ themeState ? moon : sun }></i>
+          <i onClick={ onToggleChange } className={ themeState ? sun : moon }></i>
           <button className="btn">Hire Me</button>
         </div>
     </nav>

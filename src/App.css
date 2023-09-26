@@ -6,12 +6,26 @@
     box-sizing: border-box;
 }
 
-#dark{
-    
+:root{
+    --background: #fff;
+    --font-title: #000;
+    --font-subtitle: #333;
+    --primary-color: #f54141;
+    --secondary-color: #c23131;
+
+    --background-card: #ececec;
+    --background-card-hover: #e6e6e6;
 }
 
-#light{
+[data-theme='dark'] {
+    --background: #181818;
+    --font-title: #fff;
+    --font-subtitle: #ccc;
+    --primary-color: #f54141;
+    --secondary-color: #c23131;
 
+    --background-card: #27272a;
+    --background-card-hover: #323232;
 }
 
 img{
@@ -23,9 +37,10 @@ a{
     text-decoration: none;
 }
 
-body{
+.main{
     font-family: 'Poppins', sans-serif;
-    background-color: #18181B;
+    background-color: var(--background);
+    transition: all 1s ease;
 }
 
 nav{
@@ -52,7 +67,7 @@ nav{
 .link a{
     position: relative;
     padding-bottom: 0.75rem;
-    color: #fff;
+    color: var(--font-title);
 }
 
 .link a::after{
@@ -62,7 +77,7 @@ nav{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #f54141;
+    background-color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
@@ -73,32 +88,32 @@ nav{
 .theme-toggle{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
 }
 
 .theme-toggle i{
-    color: #fff;
+    color: var(--font-title);
     font-size: 25px;
     transition: all 0.3s ease;
 }
 
 .theme-toggle i:hover{
     cursor: pointer;
-    color: #c23131;
+    color: var(--primary-color);
 }
 
 .btn{
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #f54141;
+    background-color: var(--primary-color);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover{
-    background-color: #c23131;
+    background-color: var(--secondary-color);
 }
 
 .container{
@@ -109,7 +124,7 @@ nav{
 
 .blur{
     position: absolute;
-    box-shadow: 0 0 1000px 50px #f54141;
+    box-shadow: 0 0 1000px 50px var(--primary-color);
     z-index: -100;
 }
 
@@ -124,13 +139,13 @@ header{
 
 header .content h4{
     margin-bottom: 1rem;
-    color: #ccc;
+    color: var(--font-subtitle);
     font-size: 1rem;
     font-weight: 600;
 }
 
 header .content h1{
-    color: #fff;
+    color: var(--font-title);
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 700;
@@ -139,12 +154,12 @@ header .content h1{
 
 header .content h1 span{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px var(--font-title);
 }
 
 header .content p{
     margin-bottom: 2rem;
-    color: #ccc;
+    color: var(--font-subtitle);
 }
 
 header .image{
@@ -158,12 +173,12 @@ header .image img{
 }
 
 header .image img:hover{
-    box-shadow: 0 20px 10px -15px #f54141;
+    box-shadow: 0 20px 10px -15px var(--secondary-color);
 }
 
 section .header{
     margin-bottom: 1rem;
-    color: #fff;
+    color: var(--font-title);
     text-align: center;
     font-size: 2.2rem;
     font-weight: 600;
@@ -178,7 +193,7 @@ section .header{
 
 .features .card{
     position: relative;
-    background-color: #27272a;
+    background-color: var(--background-card);
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -186,8 +201,8 @@ section .header{
 }
 
 .features .card:hover{
-    background-color: #323232;
-    border-color: #fff;
+    background-color: var(--background-card-hover);
+    border-color: var(--font-title);
 }
 
 .features .card span{
@@ -196,19 +211,19 @@ section .header{
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
-    color: #fff;
+    color: var(--font-title);
     border-radius: 5px;
 }
 
 .features .card h4{
     margin-bottom: 0.5rem;
-    color: #fff;
+    color: var(--font-title);
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .features .card p{
-    color: #ccc;
+    color: var(--font-subtitle);
     margin-bottom: 1rem;
     margin-bottom: 30px;
 }
@@ -217,19 +232,19 @@ section .header{
     position: absolute;
     bottom: 0;
     margin-bottom: 12px;
-    color: #fff;
+    color: var(--font-title);
     transition: all 0.3s ease;
 }
 
 .features .card a:hover{
-    color: #c23131;
+    color: var(--primary-color);
 }
 
 .sub-header{
     max-width: 600px;
     margin: auto;
     text-align: center;
-    color: #ccc;
+    color: var(--font-subtitle);
 }
 
 .pricing{
@@ -241,7 +256,7 @@ section .header{
 
 .pricing .card{
     padding: 3rem 2rem;
-    background-color: #27272a;
+    background-color: var(--background-card);
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;
@@ -250,8 +265,8 @@ section .header{
 }
 
 .pricing .card:hover{
-    background-color: #323232;
-    border-color: #fff;
+    background-color: var(--background-card-hover);
+    border-color: var(--font-title);
 }
 
 .pricing .card .content{
@@ -261,40 +276,41 @@ section .header{
 
 .pricing .card h4{
     margin-bottom: 1rem;
-    color: #fff;
+    color: var(--font-title);
     font-size: 1.2rem;
     font-weight: 600;
 }
 
 .pricing .card h3{
-    color: #fff;
+    color: var(--font-title);
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 600;
-    border-bottom: 2px dashed #fff;
+    border-bottom: 2px dashed var(--font-title);
 }
 
 .pricing .card p{
-    color: #fff;
+    color: var(--font-title);
     margin-bottom: 0.75rem;
 }
 
 .pricing .card p i{
-    color: #ccc;
+    color: var(--font-subtitle);
     font-size: 1.2rem;
     margin-right: 0.3rem;
 }
 
 .pricing .card button{
-    color: #fff;
+    color: var(--font-title);
+    font-weight: 600;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--font-title);
 }
 
 .pricing .card button:hover{
-    background-color: #c23131;
-    border-color: #c23131;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 footer{
@@ -310,7 +326,7 @@ footer .column .logo{
 }
 
 footer .column p{
-    color: #ccc;
+    color: var(--font-subtitle);
     margin-bottom: 2rem;
 }
 
@@ -321,7 +337,7 @@ footer .column .socials{
 }
 
 footer .column .socials a{
-    color: #ccc;
+    color: var(--font-subtitle);
     /* border: 1px solid #ccc;  */
     padding: 5px 10px;
     font-size: 1.25rem;
@@ -330,11 +346,11 @@ footer .column .socials a{
 }
 
 footer .column .socials a:hover{
-    color: #c23131;
+    color: var(--primary-color);
 }
 
 footer .column h4{
-    color: #fff;
+    color: var(--font-title);
     margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -342,20 +358,20 @@ footer .column h4{
 
 footer .column > a{
     display: block;
-    color: #ccc;
+    color: var(--font-subtitle);
     margin-bottom: 1rem;
     transition: all 0.3s ease;
 }
 
 footer .column > a:hover{
-    color: #c23131;
+    color: var(--primary-color);
 }
 
 .copyright{
     max-width: 1200px;
     margin: auto;
     padding: 2rem;
-    color: #fff;
+    color: var(--font-title);
     font-size: 0.8rem;
     text-align: center;
 }
