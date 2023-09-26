@@ -4,9 +4,9 @@ It is a web application dedicated to providing information 📖 about the differ
 
 ## Screenshots 📷
 
-![landingpag3](https://github.com/JsonRodriguez/AcademyLandingPage/assets/105531721/b58b5884-b10b-472c-82a9-e6137bfacb63)
-![landingpag2](https://github.com/JsonRodriguez/AcademyLandingPage/assets/105531721/a1ad613a-85e9-4bbc-a6d2-ecba882b7d10)
 ![landingpag1](https://github.com/JsonRodriguez/AcademyLandingPage/assets/105531721/7a321469-cea8-4a7c-b8d0-5bd305573578)
+![landingpag2](https://github.com/JsonRodriguez/AcademyLandingPage/assets/105531721/a1ad613a-85e9-4bbc-a6d2-ecba882b7d10)
+![landingpag3](https://github.com/JsonRodriguez/AcademyLandingPage/assets/105531721/b58b5884-b10b-472c-82a9-e6137bfacb63)
 
 ## Installation and Use 📦
 
