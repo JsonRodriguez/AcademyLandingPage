@@ -28,7 +28,7 @@ export const Feature = () => {
                 <span><img src={ haircuts } /></span>
                 <h4>Haircuts</h4>
                 <p>
-                Immerse yourself in the world of hairdressing and master the art of haircuts. From timeless classics to cutting-edge trends, you'll become a hair style expert.
+                Immerse yourself in the world of hairdressing and master the art of haircuts. From timeless classics to cutting-edge trends, you{`'`}ll become a hair style expert.
                 </p>
                 <a href="#">Know More <i className="fa-solid fa-arrow-right"></i></a>
             </div>
